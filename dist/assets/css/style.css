@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -372,9 +373,34 @@ body {
 }
 
 /* Blocks */
+.header {
+    width: calc(100% - 300px);
+    height: 30px;
+    background-color: #dad;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
 .sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #daaaaa;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+}
+
+.main {
+  /* отступ по размеру сайдбара */
+    padding-left: 300px;
+    padding-top: 10rem;
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 5rem 0 5rem;
 }
