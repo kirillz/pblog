@@ -1,0 +1,9 @@
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  background-color: #daaaaa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-index-sidebar;
+}
