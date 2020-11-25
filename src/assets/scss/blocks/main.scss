@@ -1,5 +1,4 @@
 .main {
   /* отступ по размеру сайдбара */
-  padding-left: $sidebar-width;
-  padding-top: 10rem; // 100рх
+  padding: 10rem 0 8rem $sidebar-width; // 100рх
 }
