@@ -556,8 +556,7 @@ body {
 
 .main {
   /* отступ по размеру сайдбара */
-    padding-left: 300px;
-    padding-top: 10rem;
+    padding: 10rem 0 8rem 300px;
 }
 
 .container {
@@ -802,4 +801,261 @@ body {
     display: flex;
     -ms-flex-pack: end;
     justify-content: flex-end;
+}
+
+.post {
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+    overflow: hidden;
+    background-color: #202020;
+    box-shadow: 0 15px 25px #000, 0.35;
+    border-radius: 5px;
+}
+
+.post__header {
+    margin: 0 0 2.5rem;
+}
+
+.post__header--preview {
+    margin: -2.5rem -2.5rem 2.5rem;
+}
+
+.post__preview {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.post__content {
+    margin-bottom: 2rem;
+}
+
+.post__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.post__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post__title a:hover {
+    text-decoration: underline;
+}
+
+.post__title--mb0 {
+    margin-bottom: 0;
+}
+
+.post__description {
+    font-size: 1.4rem;
+    color: #D2D2D2;
+}
+
+.post_text {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.post_text ul,
+  .post_text ol {
+    margin-bottom: 2rem;
+}
+
+.post_text ol {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.post_text p {
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.post_text a {
+    color: #3137C9;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.post_text a:hover {
+    color: #575cd6;
+    text-decoration: underline;
+}
+
+.post_text table {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.post_text img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.post_text h1,
+  .post_text h2,
+  .post_text h3,
+  .post_text h4 {
+    margin-bottom: 2rem;
+}
+
+.post_text h2 {
+    font-size: 1em;
+}
+
+.post_text h3 {
+    font-size: 1.25em;
+}
+
+.post_text h4 {
+    font-size: 1.15em;
+}
+
+.post_text h5,
+  .post_text h6 {
+    font-size: 1em;
+}
+
+.post__footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.post__data {
+    display: -ms-flexbox;
+    display: flex;
+    color: #828282;
+    line-height: 1.2rem;
+}
+
+.post__data a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post__data a:hover {
+    text-decoration: underline;
+}
+
+.post__data-item:not(:last-child):after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    margin: 0 1.5rem;
+    position: relative;
+    top: -2px;
+}
+
+.post_read {
+    font-size: 1.4rem;
+    color: #107EFF;
+    text-decoration: none;
+}
+
+.post_read:hover {
+    text-decoration: underline;
+}
+
+.post__actions {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.post__actions a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity .2s linear;
+    opacity: .6;
+}
+
+.post__actions a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.post__actions-icon {
+    margin-left: .5rem;
+}
+
+.embed,
+.fr-video {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.embed:before,
+  .fr-video:before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.embed iframe,
+  .embed video,
+  .embed object,
+  .embed embed,
+  .fr-video iframe,
+  .fr-video video,
+  .fr-video object,
+  .fr-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.pagination__item {
+    margin: 0 .5rem;
+}
+
+.pagination__link {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background-color: #0D0D0D;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: background-color .2s linear;
+}
+
+.pagination__link.active {
+    background-color: #3137C9;
+    box-shadow: 0 0 10px rgba(49, 55, 201, 0.15);
+}
+
+.pagination__link:hover {
+    background-color: #121212;
 }
