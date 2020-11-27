@@ -379,6 +379,18 @@ body {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+>>>>>>> v.0.0.8
 /* Blocks */
 .page {
     overflow: hidden;
@@ -419,6 +431,10 @@ body {
 
 .nav__item:hover .nav__link {
     background-color: #3137C9;
+<<<<<<< HEAD
+=======
+    text-decoration: none;
+>>>>>>> v.0.0.8
 }
 
 .nav__item:hover > .subnav {
@@ -477,6 +493,10 @@ body {
 
 .subnav__link:hover {
     background-color: #cd1c11;
+<<<<<<< HEAD
+=======
+    text-decoration: none;
+>>>>>>> v.0.0.8
 }
 
 .search {
@@ -556,8 +576,12 @@ body {
 
 .main {
   /* отступ по размеру сайдбара */
+<<<<<<< HEAD
     padding-left: 300px;
     padding-top: 10rem;
+=======
+    padding: 10rem 0 8rem 300px;
+>>>>>>> v.0.0.8
 }
 
 .container {
@@ -804,6 +828,9 @@ body {
     justify-content: flex-end;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> v.0.0.8
 
 .post {
     margin-bottom: 3rem;
@@ -815,11 +842,19 @@ body {
 }
 
 .post__header {
+<<<<<<< HEAD
     margin: -2.5rem -2.5rem 2.5rem;
 }
 
 .post__header--video {
     margin: 0 0 2.5rem;
+=======
+    margin: 0 0 2.5rem;
+}
+
+.post__header--preview {
+    margin: -2.5rem -2.5rem 2.5rem;
+>>>>>>> v.0.0.8
 }
 
 .post__preview {
@@ -839,6 +874,7 @@ body {
     font-weight: 500;
 }
 
+<<<<<<< HEAD
 .post__title a {
     color: inherit;
     text-decoration: none;
@@ -851,6 +887,84 @@ body {
 .post_text {
     font-size: 1.4rem;
     color: #D2D2D2;
+=======
+.post__title--mb0 {
+    margin-bottom: 0;
+}
+
+.post__description {
+    font-size: 1.4rem;
+    color: #D2D2D2;
+}
+
+.post__text {
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+    border-bottom: 1px solid #1C1C1C;
+}
+
+.post__text ul,
+  .post__text ol {
+    margin-bottom: 2rem;
+}
+
+.post__text ol {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.post__text a {
+    color: #3137C9;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.post__text a:hover {
+    color: #4248d1;
+    border-bottom: 1px dashed #3137C9;
+      /* Добавляем свою линию */
+}
+
+.post__text p {
+    margin: 2rem 0;
+    font-weight: 700;
+}
+
+.post__text table {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.post__text img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.post__text h1,
+  .post__text h2,
+  .post__text h3,
+  .post__text h4 {
+    margin-bottom: 2rem;
+}
+
+.post__text h2 {
+    font-size: 1em;
+}
+
+.post__text h3 {
+    font-size: 1.25em;
+}
+
+.post__text h4 {
+    font-size: 1.15em;
+}
+
+.post__text h5,
+  .post__text h6 {
+    font-size: 1em;
+>>>>>>> v.0.0.8
 }
 
 .post__footer {
@@ -869,6 +983,7 @@ body {
     line-height: 1.2rem;
 }
 
+<<<<<<< HEAD
 .post__data a {
     color: inherit;
     text-decoration: none;
@@ -878,6 +993,8 @@ body {
     text-decoration: underline;
 }
 
+=======
+>>>>>>> v.0.0.8
 .post__data-item:not(:last-child):after {
     content: '';
     display: inline-block;
@@ -893,6 +1010,7 @@ body {
 .post_read {
     font-size: 1.4rem;
     color: #107EFF;
+<<<<<<< HEAD
     text-decoration: none;
 }
 
@@ -906,6 +1024,45 @@ body {
 }
 
 .embed:before {
+=======
+}
+
+.post__actions {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.post__actions a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity .2s linear;
+    opacity: .6;
+}
+
+.post__actions a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.post__actions-icon {
+    margin-left: .5rem;
+}
+
+.embed,
+.fr-video {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.embed:before,
+  .fr-video:before {
+>>>>>>> v.0.0.8
     content: "";
     display: block;
     padding-top: 56.25%;
@@ -914,7 +1071,15 @@ body {
 .embed iframe,
   .embed video,
   .embed object,
+<<<<<<< HEAD
   .embed embed {
+=======
+  .embed embed,
+  .fr-video iframe,
+  .fr-video video,
+  .fr-video object,
+  .fr-video embed {
+>>>>>>> v.0.0.8
     position: absolute;
     top: 0;
     left: 0;
@@ -958,5 +1123,49 @@ body {
 .pagination__link:hover {
     background-color: #121212;
 }
+<<<<<<< HEAD
 =======
 >>>>>>> parent of a746ccb... Блоки постов, видео, ввода сообщения и пагинация
+=======
+
+.related {
+    padding: 3rem 0 .5rem;
+    border-bottom: 1px solid #1C1C1C;
+}
+
+.related__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.related__title {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    color: #fff;
+    font-weight: 500;
+}
+
+.related__list-item {
+    width: 50%;
+    margin-bottom: 2.5rem;
+}
+
+.related__list-title {
+    font-size: 1.4rem;
+    color: #F3EBA2;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.related__list-date {
+    color: #828282;
+    font-size: 1.2rem;
+}
+>>>>>>> v.0.0.8
