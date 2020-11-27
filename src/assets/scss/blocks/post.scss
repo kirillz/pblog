@@ -9,10 +9,13 @@
 }
 
 .post__header {
-  margin: -2.5rem -2.5rem 2.5rem;
 
-  &--video {
-    margin: 0 0 2.5rem;
+  margin: 0 0 2.5rem;
+
+
+  &--preview {
+    margin: -2.5rem -2.5rem 2.5rem;
+
 
   }
 }
@@ -33,19 +36,88 @@
   color: $white;
   font-weight: 500;
 
-  a {
-    color: inherit;
-    text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
+
+  &--mb0 {
+    margin-bottom: 0;
   }
 }
 
-.post_text {
+.post__description {
   font-size: 1.4rem;
   color: #D2D2D2;
+}
+
+.post__text {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  color: $white;
+  border-bottom: 1px solid #1C1C1C;
+
+  ul,
+  ol {
+    margin-bottom: 2rem;
+  }
+
+  ol {
+    list-style: decimal;
+    list-style-position: inside;
+  }
+
+  a {
+    color: $blue;
+    text-decoration: none;
+    transition: color .2s linear;
+
+    &:hover {
+      color: lighten($blue, 5%);
+      border-bottom: 1px dashed $blue;
+      /* Добавляем свою линию */
+    }
+  }
+
+  p {
+    margin: 2rem 0;
+    font-weight: 700;
+  }
+
+
+
+  table {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 1.15em;
+  }
+
+  h5,
+  h6 {
+    font-size: 1em;
+  }
+
 }
 
 .post__footer {
@@ -60,14 +132,7 @@
   color: #828282;
   line-height: 1.2rem;
 
-  a {
-    color: inherit;
-    text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .post__data-item {
@@ -89,9 +154,31 @@
 .post_read {
   font-size: 1.4rem;
   color: #107EFF;
-  text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
+}
+
+.post__actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  color: $white;
+  font-size: 1.2rem;
+
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity .2s linear;
+    opacity: .6;
+
+    &:hover {
+      color: $white;
+      opacity: 1;
+
+    }
   }
+}
+
+.post__actions-icon {
+  margin-left: .5rem;
 }
