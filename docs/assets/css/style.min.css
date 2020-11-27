@@ -545,23 +545,22 @@ a {
 .stories {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 15px;
+  grid-column-gap: 13px;
   grid-template-rows: 195px;
   margin-bottom: 3rem; }
 
 .stories__item {
-  background-color: #121212;
+  overflow: hidden;
   position: relative;
   border-radius: 5px;
-  overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer; }
   .stories__item:after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8));
     position: absolute;
     top: 0;
     left: 0;
@@ -571,33 +570,34 @@ a {
     transition-duration: 5s; }
 
 .stories__preview {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
+  transform: scale(1.05);
   transition: transform 1s ease-in-out; }
 
-.stories_title,
+.stories__title,
 .stories__date {
+  width: 100%;
+  padding: 1.4rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: #fff;
   position: absolute;
   left: 0;
-  width: 100%;
-  font-size: 1.2rem;
-  color: #fff;
-  padding: 1.4rem;
-  line-height: 1.3;
   z-index: 3; }
 
-.stories_title {
+.stories__title {
   top: 0; }
 
 .stories__date {
-  text-align: right;
-  bottom: 0; }
+  bottom: 0;
+  text-align: right; }
 
 .add-post {
   margin-bottom: 3rem;
@@ -773,8 +773,8 @@ a {
 
 .embed,
 .fr-video {
-  position: relative;
   display: block;
+  position: relative;
   overflow: hidden; }
   .embed:before,
   .fr-video:before {
@@ -789,11 +789,11 @@ a {
   .fr-video video,
   .fr-video object,
   .fr-video embed {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: 1; }
 
 .pagination {
