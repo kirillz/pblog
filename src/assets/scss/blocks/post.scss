@@ -147,9 +147,13 @@
   }
 }
 
-.post_read {
+.post__read {
   font-size: 1.4rem;
   color: #107EFF;
+
+  &:hover {
+    text-decoration: none;
+  }
 
 }
 

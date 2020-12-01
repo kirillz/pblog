@@ -955,9 +955,13 @@ a:hover {
     top: -2px;
 }
 
-.post_read {
+.post__read {
     font-size: 1.4rem;
     color: #107EFF;
+}
+
+.post__read:hover {
+    text-decoration: none;
 }
 
 .post__actions {
