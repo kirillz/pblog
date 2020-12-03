@@ -1,5 +1,6 @@
 .related {
-  padding: 3rem 0 .5rem;
+  padding-bottom: .5rem;
+
   border-bottom: 1px solid #1C1C1C;
 }
 
@@ -7,14 +8,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.related__title {
-  margin-bottom: 2rem;
-  font-size: 1.6rem;
-  line-height: 1.3;
-  color: $white;
-  font-weight: 500;
 }
 
 .related__list-item {

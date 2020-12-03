@@ -32,11 +32,17 @@
   color: $white;
   font-weight: 500;
 
-
-
   &--mb0 {
     margin-bottom: 0;
   }
+}
+
+.post__subtitle {
+  font-size: 1.6rem;
+  color: $white;
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .post__description {

@@ -1,0 +1,48 @@
+.form__group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form__control {
+  display: block;
+  width: 100%;
+  padding: .5rem 0;
+
+  background: none;
+  border: none;
+  border-bottom: 1px solid #3f3f3f;
+  border-radius: 0; // safari fix
+  box-shadow: none; // safari fix
+
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: $white;
+
+  &::placeholder {
+    color: rgba($white, .2);
+
+  }
+
+  &:focus + .form__line {
+    // при фокусе элементу .form__line увеличить ширину на
+    width: 100%;
+  }
+
+  &--textarea {
+    height: 3rem;
+    overflow: hidden;
+    resize: none;
+  }
+
+}
+
+.form__line {
+  width: 0;
+  height: 1px;
+  background-color: $blue;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: width .4s linear;
+}

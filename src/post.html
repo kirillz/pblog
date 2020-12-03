@@ -38,7 +38,7 @@ title: Post
     </div>
     <!--related-->
     <div class="related">
-      <h3 class="related__title">
+      <h3 class="post__subtitle">
         Интересно почитать
       </h3>
       <ul class="related__list">
@@ -64,6 +64,23 @@ title: Post
       </ul>
     </div>
     <!--/.related-->
+    <!--/comments-->
+
+    <h3 class="post__subtitle">Обсуждение</h3>
+    <form class="form" action="/" method="post">
+      <div class="form__group">
+        <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст комментария"></textarea>
+        <span class="form__line"></span>
+      </div>
+      <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+    </form>
+    <ul class="comments">
+      <li class="comments__item">
+
+      </li>
+    </ul>
+
+    <!--/.comments-->
   </div>
   <!--/.post__content-->
 
