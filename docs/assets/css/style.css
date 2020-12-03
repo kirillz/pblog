@@ -656,6 +656,14 @@ a:hover {
     background-color: #272ca0;
 }
 
+.btn--rounded {
+    border-radius: 0.41em;
+}
+
+.btn--sm {
+    padding: 0.7em 1.25em;
+}
+
 .stories {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -851,6 +859,14 @@ a:hover {
 
 .post__title--mb0 {
     margin-bottom: 0;
+}
+
+.post__subtitle {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .post__description {
@@ -1057,7 +1073,7 @@ a:hover {
 }
 
 .related {
-    padding: 3rem 0 .5rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid #1C1C1C;
 }
 
@@ -1068,14 +1084,6 @@ a:hover {
     flex-wrap: wrap;
     -ms-flex-pack: justify;
     justify-content: space-between;
-}
-
-.related__title {
-    margin-bottom: 2rem;
-    font-size: 1.6rem;
-    line-height: 1.3;
-    color: #fff;
-    font-weight: 500;
 }
 
 .related__list-item {
@@ -1095,4 +1103,68 @@ a:hover {
 .related__list-date {
     color: #828282;
     font-size: 1.2rem;
+}
+
+.comments {
+    margin-top: 5rem;
+}
+
+.form__group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    padding: .5rem 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.form__control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control:focus + .form__line {
+    width: 100%;
+}
+
+.form__control--textarea {
+    height: 3rem;
+    overflow: hidden;
+    resize: none;
+}
+
+.form__line {
+    width: 0;
+    height: 1px;
+    background-color: #3137C9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: width .4s linear;
 }

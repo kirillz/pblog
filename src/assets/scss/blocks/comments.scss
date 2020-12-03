@@ -1,3 +1,58 @@
 .comments {
   margin-top: 5rem;
 }
+
+.comments__item {
+  margin-bottom: 3rem;
+
+  > .comments {
+    padding-left: 3rem;
+    margin-top: 3rem;
+  }
+}
+
+.comments__header {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.comments__avatar {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.comments__author {
+  flex-grow: 1; // блок будет расти
+  line-height: 1.4;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.comments__name {
+  color: $white;
+  font-weight: 500;
+}
+
+.comments__pubdate {
+  color: #757575;
+}
+
+.comments__text {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  color: $white;
+}
+
+.comments__reply {
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  cursor: pointer;
+  color: $blue;
+}
