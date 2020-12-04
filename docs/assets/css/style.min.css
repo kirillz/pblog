@@ -350,6 +350,11 @@ a {
 .page {
   overflow: hidden; }
 
+.page__title {
+  font-size: 2.1rem;
+  color: #fff;
+  margin-bottom: 3rem; }
+
 .header {
   display: flex;
   width: calc(100% - 300px);
@@ -531,6 +536,8 @@ a {
   border-radius: 3em;
   cursor: pointer;
   transition: background-color .2s linear; }
+  .btn:hover {
+    text-decoration: none; }
   .btn--red {
     background-color: #ED3024;
     box-shadow: 0 7px 17px -10 rgba(237, 48, 36, 0.3); }
@@ -660,7 +667,7 @@ a {
   padding: 2.5rem;
   overflow: hidden;
   background-color: #202020;
-  box-shadow: 0 15px 25px #000, 0.35;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
   border-radius: 5px; }
 
 .post__header {
@@ -943,3 +950,61 @@ a {
   bottom: 0;
   z-index: 1;
   transition: width .4s linear; }
+
+.work {
+  display: flex;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  background-color: #202020;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 5px; }
+
+.work__preview {
+  max-width: 31rem; }
+  .work__preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto; }
+
+.work_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 29rem;
+  padding: 2.5rem; }
+
+.work__title {
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 500; }
+  .work__title a {
+    color: inherit; }
+
+.work__description {
+  margin-bottom: 3rem;
+  color: #D2D2D2;
+  font-size: 1.6rem;
+  line-height: 1.68;
+  font-weight: 300; }
+
+.work__footer {
+  margin-top: auto;
+  text-align: right; }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem; }
+
+.tags__item {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.9rem;
+  background-color: #EA8C1E;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: #fff;
+  text-align: center; }
