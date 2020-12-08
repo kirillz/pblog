@@ -1,3 +1,11 @@
+.form {
+
+  &--auth {
+    max-width: 28rem;
+    margin: 0 auto;
+  }
+}
+
 .form__group {
   margin-bottom: 1.5rem;
   position: relative;
@@ -49,4 +57,30 @@
   bottom: 0;
   z-index: 1;
   transition: width .4s linear;
+}
+
+.form__footer {
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.form__footer-list {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+
+  li {
+    margin: 0 .5rem;
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

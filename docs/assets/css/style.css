@@ -390,13 +390,24 @@ a:hover {
 
 /* Blocks */
 .page {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .page__title {
     font-size: 2.1rem;
     color: #fff;
     margin-bottom: 3rem;
+}
+
+.page__title--center {
+    text-align: center;
 }
 
 .header {
@@ -1176,6 +1187,11 @@ a:hover {
     color: #3137C9;
 }
 
+.form--auth {
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
 .form__group {
     margin-bottom: 1.5rem;
     position: relative;
@@ -1238,6 +1254,31 @@ a:hover {
     bottom: 0;
     z-index: 1;
     transition: width .4s linear;
+}
+
+.form__footer--center {
+    text-align: center;
+}
+
+.form__footer-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.form__footer-list li {
+    margin: 0 .5rem;
+}
+
+.form__footer-list a {
+    color: #fff;
+}
+
+.form__footer-list a:hover {
+    cursor: pointer;
 }
 
 .work {
