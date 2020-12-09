@@ -20,8 +20,12 @@
   width: 100%;
   max-width: 500px;
   background-color: $primary;
-  padding: 8rem 8rem 2.5rem;
+  padding: 8rem;
   border-radius: 5px;
+
+  &--contact {
+    padding-bottom: 2.5rem;
+  }
 }
 
 .modal__close {
@@ -62,4 +66,7 @@
       text-decoration: none;
     }
   }
+}
+.modal__video {
+
 }
