@@ -1420,8 +1420,12 @@ a:hover {
     width: 100%;
     max-width: 500px;
     background-color: #202020;
-    padding: 8rem 8rem 2.5rem;
+    padding: 8rem;
     border-radius: 5px;
+}
+
+.modal__content--contact {
+    padding-bottom: 2.5rem;
 }
 
 .modal__close {

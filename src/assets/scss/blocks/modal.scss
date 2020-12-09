@@ -23,6 +23,10 @@
   padding: 8rem;
   border-radius: 5px;
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   &--contact {
     padding-bottom: 2.5rem;
   }
@@ -67,6 +71,5 @@
     }
   }
 }
-.modal__video {
 
-}
+.modal__video {}
