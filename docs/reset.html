@@ -16,7 +16,7 @@
   <title>Reset password</title>
 </head>
 
-<body>
+<body class="show-sidebar">
   <!-- page -->
   <div class="page">
     <!--Header-->
@@ -44,6 +44,9 @@
     
           </ul>
         </nav>
+        <button class="burger" type="button">
+          <span>Открыть навигацию</span>
+        </button>
     
       </div>
       <div class="header__right">
@@ -76,12 +79,25 @@
             <img class="profile__avatar" src="assets/images/me.jpg" alt="">
           </picture>
     
-          <div class="profile__name">
-            Кирилл Засорин
+          <div class="profile__header">
+            <div class="profile__name">
+              Кирилл Засорин
+            </div>
+            <div class="profile__prof">
+              блог front-end разработчика
+            </div>
           </div>
-          <div class="profile__prof">
-            блог front-end разработчика
-          </div>
+    
+          <nav class="mobile-nav">
+            <ul>
+              <li><a href="/">Главная</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="works.html">Работы</a></li>
+              <li><a href="text.html">Обо мне</a></li>
+            </ul>
+          </nav>
+    
+    
           <ul class="social">
             <li class="social__item">
               <a class="social__link" href="" target="_blank">
@@ -153,89 +169,86 @@
   </div> <!-- end page -->
 
   <!-- Modal -->
-  <!-- <div class="modal">
-  <div class="modal__content modal__content--contact">
-
-    <button class="modal__close" type="button">
-      <img src="assets/images/icons/close.svg" alt="Закрыть">
-    </button>
-
-    <form class="form" action="/" method="post">
-      <div class="form__group form__group--md">
-        <input class="form__control" type="text" placeholder="Ваше имя">
-        <span class="form__line"></span>
-      </div>
-
-      <div class="form__group form__group--md">
-        <input class="form__control" type="email" placeholder="Ваш e-mail">
-        <span class="form__line"></span>
-      </div>
-
-      <div class="form__group form__group--md">
-        <textarea class="form__control form__control--textarea" placeholder="Ваше сообщение"></textarea>
-        <span class="form__line"></span>
-      </div>
-
-      <div class="form__footer">
+  <div class="modal">
+    <div class="modal__content modal__content--contact">
+  
+      <button class="modal__close" type="button">
+        <img src="assets/images/icons/close.svg" alt="Закрыть">
+      </button>
+  
+      <form class="form" action="/" method="post">
         <div class="form__group form__group--md">
-
-          <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
-
+          <input class="form__control" type="text" placeholder="Ваше имя">
+          <span class="form__line"></span>
         </div>
-      </div>
-
-    </form>
-    <ul class="modal__footer">
-      <li>
-        e-mail: <a href="mailto:mail@mail.ru">mail@mail.ru</a>
-      </li>
-      <li>
-        тел: <a href="tel:+74993223232">+7499 322-32-32</a>
-      </li>
-    </ul>
+  
+        <div class="form__group form__group--md">
+          <input class="form__control" type="email" placeholder="Ваш e-mail">
+          <span class="form__line"></span>
+        </div>
+  
+        <div class="form__group form__group--md">
+          <textarea class="form__control form__control--textarea" placeholder="Ваше сообщение"></textarea>
+          <span class="form__line"></span>
+        </div>
+  
+        <div class="form__footer">
+          <div class="form__group form__group--md">
+  
+            <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+  
+          </div>
+        </div>
+  
+      </form>
+      <ul class="modal__footer">
+        <li>
+          e-mail: <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+        </li>
+        <li>
+          тел: <a href="tel:+74993223232">+7499 322-32-32</a>
+        </li>
+      </ul>
+    </div>
+    <!--/.modal__content-->
   </div>
-  <!--/.modal__content-->
-</div>
-<!--/.modal-->
- -->
-  <!-- <div class="modal">
-  <div class="modal__content">
-
-    <button class="modal__close" type="button">
-      <img src="assets/images/icons/close.svg" alt="Закрыть">
-    </button>
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link" href="">
-          <img src="assets/images/icons/telegram.svg">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="">
-          <img src="assets/images/icons/twitter.svg">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="">
-          <img src="assets/images/icons/pinterest.svg">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="">
-          <img src="assets/images/icons/copy.svg">
-        </a>
-      </li>
-    </ul>
-
+  <!--/.modal-->
+  <div class="modal">
+    <div class="modal__content">
+  
+      <button class="modal__close" type="button">
+        <img src="assets/images/icons/close.svg" alt="Закрыть">
+      </button>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="">
+            <img src="assets/images/icons/telegram.svg">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="">
+            <img src="assets/images/icons/twitter.svg">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="">
+            <img src="assets/images/icons/pinterest.svg">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="">
+            <img src="assets/images/icons/copy.svg">
+          </a>
+        </li>
+      </ul>
+  
+    </div>
+    <!--/.modal__content-->
   </div>
-  <!--/.modal__content-->
-</div>
-<!--/.modal-->
- -->
-  <!-- <div class="modal">
-  <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
-</div>
- -->
+  <!--/.modal-->
+  <div class="modal">
+    <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
+  </div>
 
 
   <!-- JS -->

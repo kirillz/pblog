@@ -1,4 +1,8 @@
 .main {
   /* отступ по размеру сайдбара */
   padding: 10rem 0 8rem $sidebar-width; // 100рх
+
+  @include breakpoint($tablet-bp) {
+    padding-left: 0;
+  }
 }

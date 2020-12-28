@@ -373,10 +373,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-body.no-scroll {
-    overflow: hidden;
-}
-
 *,
 *:before,
 *:after {
@@ -1397,8 +1393,7 @@ a:hover {
 }
 
 .modal {
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-pack: center;
@@ -1422,6 +1417,10 @@ a:hover {
     background-color: #202020;
     padding: 8rem;
     border-radius: 5px;
+}
+
+.modal__content ::-webkit-scrollbar {
+    display: none;
 }
 
 .modal__content--contact {

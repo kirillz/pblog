@@ -14,8 +14,9 @@
 
 .add-post__textarea {
   display: block;
-  width: 80%;
+  flex-grow: 1;
   height: 26px;
+  overflow: hidden;
 
   border: none;
   background: transparent;
@@ -30,6 +31,15 @@
     color: #D2D2D2;
   }
 }
+
+.add-post__form-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 120px;
+  flex-shrink: 0;
+
+}
+
 
 .add-post__file,
 .add-post__send {
@@ -64,10 +74,4 @@
   &:hover {
     background-color: darken($blue, 5%);
   }
-}
-
-.add-post__form-actions {
-  width: 20%;
-  display: flex;
-  justify-content: flex-end;
 }
