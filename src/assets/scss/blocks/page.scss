@@ -2,8 +2,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden; // нам не надо гориз. скролл!
   min-height: 100vh;
+  overflow: hidden; // нам не надо гориз. скролл!
+
+  @include breakpoint($tablet-bp) {
+
+    .show-sidebar & {
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($black, .9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+    }
+  }
 }
 
 .page__title {

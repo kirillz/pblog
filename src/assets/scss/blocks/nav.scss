@@ -1,11 +1,25 @@
 .nav {
+  &--mobile {
+    display: none;
+    margin: 3rem 0;
+  }
+
   @include breakpoint($tablet-bp) {
     display: none;
+
+
+    &--mobile {
+      display: block;
+    }
   }
 }
 
 .nav__list {
   display: flex;
+
+  @include breakpoint($tablet-bp) {
+    flex-direction: column;
+  }
 }
 
 .nav__item {
@@ -19,6 +33,14 @@
 
     > .subnav {
       display: block;
+    }
+  }
+
+  @include breakpoint($tablet-bp) {
+    &:hover {
+      .nav__link {
+        background: none;
+      }
     }
   }
 }
@@ -52,5 +74,11 @@
       transform: translateY(-60%);
 
     }
+  }
+
+  @include breakpoint($tablet-bp) {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.6rem;
   }
 }

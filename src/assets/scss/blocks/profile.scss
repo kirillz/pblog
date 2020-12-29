@@ -1,9 +1,12 @@
 .profile {
   margin-top: -5rem;
-  position: relative;
+
 
   @include breakpoint($tablet-bp) {
     margin-top: -1rem;
+    position: relative;
+
+    border-bottom: 1px solid #1C1C1C;
   }
 }
 
