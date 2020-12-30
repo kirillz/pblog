@@ -373,6 +373,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+body.no-scroll, body.show-sidebar {
+    overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -396,8 +400,26 @@ a:hover {
     flex-direction: column;
     -ms-flex-pack: center;
     justify-content: center;
-    overflow: hidden;
     min-height: 100vh;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+    .show-sidebar .page {
+        position: relative;
+    }
+
+    .show-sidebar .page:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
 }
 
 .page__title {
@@ -452,15 +474,31 @@ a:hover {
     }
 }
 
+.nav--mobile {
+    display: none;
+    margin: 3rem 0;
+}
+
 @media screen and (max-width: 991px) {
     .nav {
         display: none;
+    }
+
+    .nav--mobile {
+        display: block;
     }
 }
 
 .nav__list {
     display: -ms-flexbox;
     display: flex;
+}
+
+@media screen and (max-width: 991px) {
+    .nav__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .nav__item {
@@ -474,6 +512,12 @@ a:hover {
 
 .nav__item:hover > .subnav {
     display: block;
+}
+
+@media screen and (max-width: 991px) {
+    .nav__item:hover .nav__link {
+        background: none;
+    }
 }
 
 .nav__link {
@@ -503,6 +547,14 @@ a:hover {
     right: 1.35rem;
     -webkit-transform: translateY(-60%);
     transform: translateY(-60%);
+}
+
+@media screen and (max-width: 991px) {
+    .nav__link {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.6rem;
+    }
 }
 
 .burger {
@@ -589,6 +641,16 @@ a:hover {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 991px) {
+    .subnav {
+        position: static;
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+}
+
 .subnav__link {
     display: block;
     padding: .45rem 1.2rem;
@@ -601,6 +663,18 @@ a:hover {
 .subnav__link:hover {
     background-color: #cd1c11;
     text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+    .subnav__link {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 1.5rem;
+    }
+
+    .subnav__link:hover {
+        background: none;
+    }
 }
 
 .search {
@@ -654,8 +728,14 @@ a:hover {
 
 @media screen and (max-width: 991px) {
     .sidebar {
-        top: 4rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
         height: calc(100vh - 4rem);
+        padding-bottom: 1.5rem;
+        overflow: auto;
+        top: 4rem;
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
         transition: -webkit-transform .2s linear;
@@ -692,6 +772,13 @@ a:hover {
     padding: 0 2rem;
 }
 
+@media screen and (max-width: 991px) {
+    .sidebar__content {
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+}
+
 .sidebar__footer {
     display: -ms-flexbox;
     display: flex;
@@ -726,12 +813,13 @@ a:hover {
 
 .profile {
     margin-top: -5rem;
-    position: relative;
 }
 
 @media screen and (max-width: 991px) {
     .profile {
         margin-top: -1rem;
+        position: relative;
+        border-bottom: 1px solid #1C1C1C;
     }
 }
 

@@ -1,6 +1,5 @@
 .related {
   padding-bottom: .5rem;
-
   border-bottom: 1px solid #1C1C1C;
 }
 
@@ -8,11 +7,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
+  }
 }
 
 .related__list-item {
   width: 50%;
   margin-bottom: 2.5rem;
+
+  @include breakpoint($mobile-bp) {
+    width: 100%;
+  }
 }
 
 .related__list-title {

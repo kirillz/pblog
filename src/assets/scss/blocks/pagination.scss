@@ -3,6 +3,9 @@
   justify-content: center;
   margin-top: 8rem;
 
+  @include breakpoint($tablet-bp) {
+    margin-top: 5rem;
+  }
 }
 
 .pagination__item {

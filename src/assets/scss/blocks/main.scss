@@ -3,6 +3,6 @@
   padding: 10rem 0 8rem $sidebar-width; // 100рх
 
   @include breakpoint($tablet-bp) {
-    padding-left: 0;
+    padding: 7rem 0 5rem;
   }
 }
